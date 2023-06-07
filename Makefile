@@ -1,3 +1,5 @@
+CFLAGS = -g -Wall -Wextra -pedantic -O2 -Werror
+
 build:
-	g++ -Wall -Wextra -O2 -g src/server.cpp -o out/server
-	g++ -Wall -Wextra -O2 -g src/client.cpp -o out/client
+	g++ $(CFLAGS) src/server.cpp -o out/server
+	g++ $(CFLAGS) src/client.cpp -o out/client
