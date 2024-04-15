@@ -1,4 +1,4 @@
-CFLAGS = -g -Wall -Wextra -pedantic -O2 -Werror
+CFLAGS = -g -Wall -Wextra -std=c++11 -O2 -Werror
 
 build:
 	g++ $(CFLAGS) src/server.cpp -o out/server
